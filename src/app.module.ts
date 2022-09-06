@@ -9,7 +9,7 @@ import { TaskLogModule } from './task-log/task-log.module';
   imports: [
     TasksModule,
     TaskLogModule,
-    MongooseModule.forRoot('mongodb://admin:123456@localhost:27017/todolist', {})
+    MongooseModule.forRoot('mongodb://admin:123456@todolist-mongodb:27017/todolist', {})
   ],
   controllers: [AppController],
   providers: [AppService],
